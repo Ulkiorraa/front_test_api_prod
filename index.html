@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Frontend para Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    
+    <h2>Listar Produtos</h2>
+    <button onclick="listarProdutos()">Listar Produtos</button>
+    <div id="listaProdutos"></div>
+
+    <h2>Buscar Produto por Código</h2>
+    <input type="text" id="codigoProduto" placeholder="Código do Produto">
+    <button onclick="buscarProdutoPorCodigo()">Buscar Produto</button>
+    <div id="produtoPorCodigo"></div>
+
+    <h2>Inserir Novo Produto</h2>
+    <input type="text" id="codigoNovo" placeholder="Código do Produto">
+    <input type="text" id="nomeNovo" placeholder="Nome do Produto">
+    <input type="text" id="precoNovo" placeholder="Preço do Produto">
+    <button onclick="inserirProduto()">Inserir Produto</button>
+    
+    <h2>Atualizar Produto</h2>
+    <input type="text" id="codigoAtualizar" placeholder="Código do Produto">
+    <input type="text" id="novoNome" placeholder="Novo Nome do Produto">
+    <input type="text" id="novoPreco" placeholder="Novo Preço do Produto">
+    <button onclick="atualizarProduto()">Atualizar Produto</button>
+
+    <h2>Remover Produto</h2>
+    <input type="text" id="codigoRemover" placeholder="Código do Produto">
+    <button onclick="removerProduto()">Remover Produto</button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>
